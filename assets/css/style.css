@@ -879,10 +879,6 @@
   position: relative;
 }
 
-.banner-slide-show img {
-  cursor: pointer;
-}
-
 .banner-primary__list {
   list-style: none;
   display: flex;
