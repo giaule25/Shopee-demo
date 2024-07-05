@@ -201,12 +201,8 @@
           <!-- Menu on mobile -->
           <div class="header__menu-mobile js-header__menu-mobile">
             <i class="header__menu-mobile-icon fa-solid fa-bars"></i>
-            <!-- Search button on mobile -->
-            <div class="header__search-btn-mobile js-header__search-btn-mobile">
-              <i class="header__search-mobile-icon fa-solid fa-magnifying-glass"></i>
-            </div>
-            <nav class="header-mobile__nav-container">
-              <div class="header-mobile__nav-overlay js-header-mobile__nav-overlay"></div>
+            <nav class="header-mobile__nav-container js-header-mobile__nav-container">
+              <div class="header-mobile__nav-overlay"></div>
               <div class="header-mobile__nav js-header-mobile__nav">
                 <div class="header-mobile__nav-user">
                   <img class="header-mobile__nav-user-img" src="./assets/image/user-image/user_1.jpg" alt="User Image">
@@ -228,6 +224,11 @@
                 </ul>
               </div>
             </nav>
+          </div>
+
+          <!-- Search button on mobile -->
+          <div class="header__search-btn-mobile js-header__search-btn-mobile">
+            <i class="header__search-mobile-icon fa-solid fa-magnifying-glass"></i>
           </div>
 
           <div class="header__logo hide-on-tablet">
@@ -428,6 +429,52 @@
       </ul>
     </header>
 
+    <!-- Banner -->
+    <div class="banner">
+      <div class="grid wide">
+        <div class="row sm-gutter">
+          <div class="col d-8 l-8">
+            <div class="banner-slide-show">
+              <div class="banner-primary__list js-banner-primary__list">
+                <img class="js-banner-item__img" src="https://cf.shopee.vn/file/a2fbff9877089bcc52674d5a4215d9c7_xxhdpi"
+                  alt="Banner" width="100%">
+                <img class="js-banner-item__img" src="https://cf.shopee.vn/file/cbd678911fdabb577ec97dcb7efd7141_xxhdpi"
+                  alt="Banner" width="100%">
+                <img class="js-banner-item__img" src="https://cf.shopee.vn/file/6da82e01627122bf22b8bcc014fc90af_xxhdpi"
+                  alt="Banner" width="100%">
+                <img class="js-banner-item__img" src="https://cf.shopee.vn/file/8da7a277ab0b311b9152070ac7e2c217_xxhdpi"
+                  alt="Banner" width="100%">
+              </div>
+
+              <!-- Banner control -->
+              <div class="banner__control">
+                <div class="banner__control-btn banner__control-btn-left js-banner__control-btn-left">
+                  <i class="banner__control-icon fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="banner__control-btn banner__control-btn-right js-banner__control-btn-right">
+                  <i class="banner__control-icon fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <!-- Banner index image -->
+              <div class="banner__index-image">
+                <div class="banner__index-image-item banner__index-image-item-0 banner__index-image--active"></div>
+                <div class="banner__index-image-item banner__index-image-item-1"></div>
+                <div class="banner__index-image-item banner__index-image-item-2"></div>
+                <div class="banner__index-image-item banner__index-image-item-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-4 l-4">
+            <div class="banner-secondary__list">
+              <img src="https://cf.shopee.vn/file/7838079195aa34290179f39d1b496d69_xhdpi" alt="Banner" width="100%">
+              <img src="https://cf.shopee.vn/file/735586d941db9bb7dfe1afcde9179d15_xhdpi" alt="Banner" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Content -->
     <div class="app-container">
       <div class="grid wide">
@@ -500,38 +547,40 @@
             <!-- Category mobile -->
             <div class="grid wide">
               <div class="row">
-                <ul class="category-mobile">
-                  <li class="category-mobile-item">
-                    <a href="" class="category-mobile-item__link">Build PC</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a href="" class="category-mobile-item__link">Bàn phím Cơ LED</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a href="" class="category-mobile-item__link">MainBoard và CPU</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">Gaming Gear</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">PC Workstation</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">PC Văn Phòng</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">PC AMD Gaming</a>
-                  </li>
-                  <li class="category-mobile-item category-item--active">
-                    <a class="category-mobile-item__link" href="#">PC Giả Lập - Ảo Hoá</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">Gaming Gear</a>
-                  </li>
-                  <li class="category-mobile-item">
-                    <a class="category-mobile-item__link" href="#">Linh Kiện Máy Tính</a>
-                  </li>
-                </ul>
+                <div class="col t-12 m-12">
+                  <ul class="category-mobile">
+                    <li class="category-mobile-item">
+                      <a href="" class="category-mobile-item__link">Build PC</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a href="" class="category-mobile-item__link">Bàn phím Cơ LED</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a href="" class="category-mobile-item__link">MainBoard và CPU</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">Gaming Gear</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">PC Workstation</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">PC Văn Phòng</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">PC AMD Gaming</a>
+                    </li>
+                    <li class="category-mobile-item category-item--active">
+                      <a class="category-mobile-item__link" href="#">PC Giả Lập - Ảo Hoá</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">Gaming Gear</a>
+                    </li>
+                    <li class="category-mobile-item">
+                      <a class="category-mobile-item__link" href="#">Linh Kiện Máy Tính</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -1367,13 +1416,67 @@
     // Open menu mobile
     const menuIcon = document.querySelector('.js-header__menu-mobile')
     const menu = document.querySelector('.js-header-mobile__nav')
-    const menuOverlay = document.querySelector('.js-header-mobile__nav-overlay')
-    const main = document.querySelector('.main')
+    const menuOverlay = document.querySelector('.header-mobile__nav-overlay')
 
     menuIcon.addEventListener('click', () => {
-      menu.style.left = 0;
+      menu.classList.add('mobile__nav--opened')
       menuOverlay.style.display = 'block';
-      event.stopPropagation()
+    })
+
+    menuOverlay.addEventListener('click', () => {
+      menu.style.left = '-260px';
+      menuOverlay.style.display = 'none';
+    })
+
+    // Banner slideShow
+    const listImage = document.querySelector('.js-banner-primary__list')
+    const images = document.querySelectorAll('.js-banner-item__img')
+    const btnLeft = document.querySelector('.js-banner__control-btn-left')
+    const btnRight = document.querySelector('.js-banner__control-btn-right')
+
+    let currentImage = 0
+
+    function handleChangeSlide() {
+      if (currentImage == images.length - 1) {
+        currentImage = 0
+        let width = images[0].clientWidth
+        listImage.style.transform = `translateX(0px)`
+        handleChangeIndexImage()
+      } else {
+        currentImage++
+        let width = images[0].clientWidth
+        listImage.style.transform = `translateX(${width * -1 * currentImage}px)`
+        handleChangeIndexImage()
+      }
+    }
+
+    function handleChangeIndexImage() {
+      document.querySelector('.banner__index-image--active').classList.remove('banner__index-image--active')
+      document.querySelector('.banner__index-image-item-' + currentImage).classList.add('banner__index-image--active')
+    }
+
+    let handleEventChangeSlide = setInterval(handleChangeSlide, 3000);
+
+    btnRight.addEventListener('click', () => {
+      clearInterval(handleEventChangeSlide)
+      handleChangeSlide()
+      handleEventChangeSlide = setInterval(handleChangeSlide, 3000);
+    })
+
+    btnLeft.addEventListener('click', () => {
+      clearInterval(handleEventChangeSlide)
+      if (currentImage == 0) {
+        currentImage = images.length - 1;
+        let width = images[0].clientWidth
+        listImage.style.transform = `translateX(${width * -1 * currentImage}px)`
+        handleChangeIndexImage()
+      } else {
+        currentImage--
+        let width = images[0].clientWidth
+        listImage.style.transform = `translateX(${width * -1 * currentImage}px)`
+        handleChangeIndexImage()
+      }
+      handleEventChangeSlide = setInterval(handleChangeSlide, 3000);
     })
   </script>
 </body>
